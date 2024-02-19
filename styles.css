@@ -1,0 +1,75 @@
+.rts-search {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Ancho del contenedor de búsqueda ajustado al 100% */
+    max-width: 300px; /* Establece un ancho máximo para evitar que se vuelva demasiado ancho */
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 300px; /* Establece una altura máxima para evitar que los resultados sean demasiado largos */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si los resultados son largos */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.search-result {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.search-result:last-child {
+    border-bottom: none;
+}
+
+.search-result img {
+    width: 50px; /* Establece un ancho fijo para las imágenes */
+    height: 50px; /* Establece una altura fija para las imágenes */
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.search-result a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-result a:hover {
+    text-decoration: underline;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Estilos para el enlace "Ver todos los resultados" */
+.live-search_lnk.live-search_more a {
+    color: #0073e6; /* Color del enlace */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.live-search_lnk.live-search_more a:hover {
+    text-decoration: underline;
+}
