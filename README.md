@@ -2,9 +2,7 @@
 
 Implementa un buscador en tiempo real para entradas de blog en WordPress.
 
-## Real Time Search Post
-**Contribuidores**: CTucios  
-**Licencia**: GPLv2 o posterior
+
 
 ### Licencia
 
